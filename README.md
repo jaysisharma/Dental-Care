@@ -2,6 +2,7 @@
 
 # Project-Screenshot
 
+https://github.com/jaysisharma/Dental-Care/blob/main/assets/images/demo.png
 
 
 # Dentist Clinic Website
