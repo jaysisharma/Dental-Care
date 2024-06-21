@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dentist</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <style>
+    html,
+    body {
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    .hero {
+      background-color: #fcf6ea;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .main {
+      max-width: 1450px;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hero"
+    style="background: url('https://static.vecteezy.com/system/resources/previews/036/595/008/non_2x/ai-generated-dental-clinic-advertisment-background-with-copy-space-free-photo.jpg'); background-size: cover;">
+    <div class="main">
+      <div class="navbar py-6 flex justify-between items-center ">
+        <div class="logo font-bold  text-3xl text-blue-600"><i class="fa-brands fa-react"></i> Dentist</div>
+        <ul class="md:flex hidden gap-4 items-center text-xl">
+          <li class="font-bold"><a href="#">Home</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#service">Our Service</a></li>
+          <li><a href="#pricing">Dental Experience</a></li>
+          <li><a href="#testimonial">New Patients</a></li>
+        </ul>
+
+        <div class="btns flex items-center gap-4">
+          <button class="btn bg-blue-500 p-3 rounded-2xl text-white ">Sign Up</button>
+          <button id="menu" class="p-2 text-gray-600 md:hidden block mr-8 hover:text-gray-800 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+
+
+
+      </div>
+    </div>
+    <div id="box" class="box h-[90vh] hidden w-screen bg-white absolute">
+      <ul class="md:hidden flex flex-col justify-center h-full  gap-4 items-center text-xl">
+        <li class="font-bold"><a href="#">Home</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#service">Our Service</a></li>
+          <li><a href="#pricing">Dental Experience</a></li>
+          <li><a href="#testimonial">New Patients</a></li>
+      </ul>
+    </div>
+    <div class="bg-blue-400 w-screen h-[1px]"></div>
+    <div class="m_content flex justify-between items-center   h-[90vh]">
+      <div class="contentp flex justify-between items-center flex-col w-screen gap-10 text-center">
+        <img class="w-[200px] h-[200px] md:hidden block rounded-full  border border-4 border-blue-600"
+          src="https://hips.hearstapps.com/hmg-prod/images/portrait-of-a-happy-young-doctor-in-his-clinic-royalty-free-image-1661432441.jpg?crop=0.66698xw:1xh;center,top&resize=1200:*"
+          alt="">
+        <div class="txt">
+          <h2 class="text-3xl mb-4">A better life start <br> with a Beautiful Smile</h2>
+          <p>Let's check how your dental health is by our professional <br> and modern facilities services only at our
+            clinic
+          </p>
+        </div>
+
+        <div class="btn flex flex-col md:flex-row gap-8">
+          <button class="btn bg-blue-500 p-3 rounded-2xl text-white  px-4 text-2xl">Request an appointment</button>
+          <button class="btn bg-transparent p-3 border rounded-2xl text-blue-600  px-4 text-2xl"><i
+              class="fa-solid fa-phone-volume mr-4"></i> Call Us at 302-365-2251</button>
+
+
+
+        </div>
+        <img class="w-[400px] hidden md:block h-[400px] rounded-full h-[350px] border border-4 border-blue-600"
+          src="https://hips.hearstapps.com/hmg-prod/images/portrait-of-a-happy-young-doctor-in-his-clinic-royalty-free-image-1661432441.jpg?crop=0.66698xw:1xh;center,top&resize=1200:*"
+          alt="">
+      </div>
+    </div>
+  </div>
+  <section id="about">
+    <div class="about h-screen  w-screen flex md:flex-row flex-col   p-8 ">
+      <div class="left flex justify-center items-center md:w-1/2 w-full mb-10">
+        <img class="md:w-[450px] md:h-[460px] w-[300px] h-[300px] md:rounded-2xl rounded-full"
+          src="https://cdn.prod.website-files.com/603d402a7f5044d63413b245/61686beb623a01e871c146b6_shutterstock_1893553321.jpg"
+          alt="">
+      </div>
+      <div class="right flex items-start justify-center px-12 flex-col md:max-w-[700px] w-screen gap-4">
+        <h6 class="text-blue-500 text-xl">About Us</h6>
+        <h2 class="md:text-6xl text-4xl  font-bold">Why Dentist Care? </h2>
+        <p class="text-2xl" style="font-weight: 400;">To truly maintain healthy gums and teeth and avoid other oral health
+          problems, regular dental care visits are essential. Poor dental health is also linked to a number of health
+          problems such as diabetes, kidney disease and heart disease.</p>
+        <button class="btn bg-blue-600 p-3 rounded-xl md:mt-10 text-white  px-12 text-xl">Explore More <i
+            class="ml-4 fa-solid fa-right-from-bracket"></i></button>
+  
+      </div>
+    </div>
+  </section>
+  <section id="service">
+    <div class="services md:h-[130vh] w-screen flex justify-center  flex-col items-center bg-[#fcf6ea] pt-16">
+      <h2 class="md:text-6xl text-4xl">Comprehensive <span class="underline underline-blue-600">Services</span></h2>
+      <p class="text-center mt-4">Your smile communicates interest, compassion, warmth,</p>
+      <p class="text-center"> friendliness and happiness.
+        A smile is universally understood. </p>
+  
+      <div class="container mx-auto mt-10 p-10">
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-8">
+          <div class="rounded-xl overflow-hidden shadow-lg bg-white">
+            <img class="w-full h-64 object-cover" src="https://img.freepik.com/free-photo/close-up-dentist-using-instruments_23-2151053273.jpg?t=st=1718968428~exp=1718972028~hmac=e048da447710228ebb91c1a837c5e1411980d098e9ea8ff011618d22fce644f4&w=1380" alt="General Dentistry">
+            <div class="px-6 py-4">
+              <div class="font-bold text-2xl mb-2">General Dentistry</div>
+              <p class="text-blue-700 text-lg flex justify-between">
+                Short description in four words.
+                <i class="ml-4 fa-solid fa-right-from-bracket text-blue-600 text-2xl"></i>
+              </p>
+            </div>
+          </div>
+          <div class="rounded-xl overflow-hidden shadow-lg bg-white">
+            <img class="w-full h-64 object-cover" src="https://img.freepik.com/free-photo/health-patient-medical-dental-doctor_1303-977.jpg?t=st=1718968477~exp=1718972077~hmac=e668ec57c615a1fdc6db554fd007c0fb5021d609ac3847c5a76a878083f3c5a1&w=1380" alt="Cosmetic Dentistry">
+            <div class="px-6 py-4">
+              <div class="font-bold text-2xl mb-2">Cosmetic Dentistry</div>
+              <p class="text-blue-700 text-lg flex justify-between">
+                Short description in four words.
+                <i class="ml-4 fa-solid fa-right-from-bracket text-blue-600 text-2xl"></i>
+              </p>
+            </div>
+          </div>
+          <div class="rounded-xl overflow-hidden shadow-lg bg-white">
+            <img class="w-full h-64 object-cover" src="https://img.freepik.com/free-photo/dentists-treat-patients-teeth_1150-19650.jpg?t=st=1718968504~exp=1718972104~hmac=abc3e205258dab7a6f7fa15f675ca727c80f85ac93448dfe31f0f7c36b911829&w=1380" alt="Restorative Dentistry">
+            <div class="px-6 py-4">
+              <div class="font-bold text-2xl mb-2">Restorative Dentistry</div>
+              <p class="text-blue-700 text-lg flex justify-between">
+                Short description in four words.
+                <i class="ml-4 fa-solid fa-right-from-bracket text-blue-600 text-2xl"></i>
+              </p>
+            </div>
+          </div>
+          <div class="rounded-xl overflow-hidden shadow-lg bg-white">
+            <img class="w-full h-64 object-cover" src="https://img.freepik.com/free-vector/flat-dental-care-concept-illustration_23-2148982241.jpg?t=st=1718968453~exp=1718972053~hmac=b17610429da37a09c3b1a3e3549b4c9a1eaa4ba58534be9ef9675149f8d2e6fc&w=900" alt="Same-Day Dentistry">
+            <div class="px-6 py-4">
+              <div class="font-bold text-2xl mb-2">Same-Day Dentistry</div>
+              <p class="text-blue-700 text-lg flex justify-between">
+                Short description in four words.
+                <i class="ml-4 fa-solid fa-right-from-bracket text-blue-600 text-2xl"></i>
+              </p>
+            </div>
+          </div>
+          <div class="rounded-xl overflow-hidden shadow-lg bg-white">
+            <img class="w-full h-64 object-cover" src="https://img.freepik.com/free-photo/young-man-with-toothy-smile-demonstrating-his-dental-implant_259150-57670.jpg?t=st=1718968689~exp=1718972289~hmac=ff257118ee1047dfd392325996089f4dc145437905921c36cc43be93a6b1ef2b&w=1380" alt="Dental Implants">
+            <div class="px-6 py-4">
+              <div class="font-bold text-2xl mb-2">Dental Implants</div>
+              <p class="text-blue-700 text-lg flex justify-between">
+                Short description in four words.
+                <i class="ml-4 fa-solid fa-right-from-bracket text-blue-600 text-2xl"></i>
+              </p>
+            </div>
+          </div>
+          <div class="rounded-xl overflow-hidden shadow-lg bg-white">
+            <img class="w-full h-64 object-cover" src="https://img.freepik.com/free-photo/young-woman-suffering-with-toothache_329181-18440.jpg?t=st=1718968752~exp=1718972352~hmac=b898666bdd11a402e5645dd4db9980b2d46a5d3b5c8d1a34dc185eaf10c241ee&w=740" alt="Dental Sleep Medicine">
+            <div class="px-6 py-4">
+              <div class="font-bold text-2xl mb-2">Dental Sleep Medicine</div>
+              <p class="text-blue-700 text-lg flex justify-between">
+                Short description in four words.
+                <i class="ml-4 fa-solid fa-right-from-bracket text-blue-600 text-2xl"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  
+  
+  
+    </div>
+  </section>
+  <section id="pricing" class="bg-cover bg-center"
+    style="background-image: url('https://static.vecteezy.com/system/resources/previews/018/821/490/non_2x/3d-realistic-professional-dental-tools-set-for-dentistry-inspection-teeth-care-health-concept-basic-metal-medical-equipment-instrument-illustration-isolated-on-blue-background-vector.jpg');">
+    <div class="max-w-7xl mx-auto flex flex-col items-center justify-center h-screen px-6 py-16">
+      <div class="text-center text-white mb-16">
+        <h2 class="text-6xl font-bold mb-4">Redefining Your Dental Experience</h2>
+        <p class="text-xl">We've Created a Low-stress Environment Where Smiles Feel At Home.<br>With our services, you
+          can get just that!</p>
+      </div>
+      <!-- <div class="flex flex-wrap justify-center gap-8">
+              <div class="card flex justify-center items-center flex-col cursor-pointer h-[350px] w-[300px] bg-white shadow-xl hover:scale-105 transform transition-transform duration-300 p-6 text-center">
+                  <i class="fa-solid fa-tooth text-4xl text-orange-600 mb-4"></i>
+                  <p class="text-3xl mb-4">Modern</p>
+                  <ul class="flex flex-col gap-2 text-lg">
+                      <li><i class="fa-regular fa-circle-check text-blue-600"></i> Innovative technology / techniques</li>
+                      <li><i class="fa-regular fa-circle-check text-blue-600"></i> Digital Scans and x-rays</li>
+                      <li><i class="fa-regular fa-circle-check text-blue-600"></i> Laser dentistry solutions</li>
+                      <li><i class="fa-regular fa-circle-check text-blue-600"></i> More convenience and options</li>
+                  </ul>
+              </div>
+              <div class="card flex justify-center items-center flex-col cursor-pointer h-[430px] w-[300px] bg-white shadow-xl hover:scale-105 transform transition-transform duration-300 p-6 text-center">
+                  <i class="fa-solid fa-tooth text-4xl text-orange-600 mb-4"></i>
+                  <p class="text-3xl mb-4">Comfortable</p>
+                  <ul class="flex flex-col gap-2 text-lg">
+                      <li><i class="fa-regular fa-circle-check text-blue-600"></i> In-office comforts for anxiety relief</li>
+                      <li><i class="fa-regular fa-circle-check text-blue-600"></i> Pain-free dental treatments</li>
+                      <li><i class="fa-regular fa-circle-check text-blue-600"></i> Cozy blankets and pillows</li>
+                      <li><i class="fa-regular fa-circle-check text-blue-600"></i> TVs in the treatment room</li>
+                  </ul>
+                  <button class="btn px-4 py-2 bg-blue-600 text-white mt-6">New Patients Info</button>
+              </div>
+              <div class="card flex justify-center items-center flex-col cursor-pointer h-[350px] w-[300px] bg-white shadow-xl hover:scale-105 transform transition-transform duration-300 p-6 text-center">
+                  <i class="fa-solid fa-kit-medical text-4xl text-orange-600 mb-4"></i>
+                  <p class="text-3xl mb-4">Patient Focused</p>
+                  <ul class="flex flex-col gap-2 text-lg">
+                      <li><i class="fa-regular fa-circle-check text-blue-600"></i> Innovative technology / techniques</li>
+                      <li><i class="fa-regular fa-circle-check text-blue-600"></i> Digital Scans and x-rays</li>
+                      <li><i class="fa-regular fa-circle-check text-blue-600"></i> Laser dentistry solutions</li>
+                      <li><i class="fa-regular fa-circle-check text-blue-600"></i> More convenience and options</li>
+                  </ul>
+              </div>
+          </div> -->
+    </div>
+  </section>
+  <div class="book flex h-80 w-screen  justify-center items-center bg-[#fae7bd] flex-col md:flex-row gap-4">
+    <button class="btn bg-blue-600 px-4 py-2 text-white  mr-6 rounded-lg text-4xl">Book Now</button>
+    <h2 class="md:text-5xl text-3xl text-center">Find available appointments!</h2>
+  </div>
+
+  <section id="testimonial">
+    <div class="testimonial">
+      <h2 class="text-4xl text-center pt-24 font-bold">Let's see our patients <span class="underline">Feedback!</span>
+      </h2>
+      <section class="text-gray-600 body-font bg-cover bg-center"
+        style="background-image: url('https://images.unsplash.com/photo-1535443341235-0f48f5c8ab47');">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap -m-4">
+            <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+              <div class="h-full bg-white p-8 rounded-lg  md:block flex  flex-col justify-center items-center">
+                <img alt="Emily S." class="w-20 h-20 mb-4 object-cover object-center rounded-full inline-block"
+                  src="https://randomuser.me/api/portraits/women/65.jpg">
+                <p class="leading-relaxed">Thank you for giving me back my smile! The treatment was painless, and the
+                  results exceeded my expectations. I can't recommend your dental care enough!</p>
+                <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+                <h2 class="text-gray-900 font-medium title-font tracking-wider text-lg">Emily S.</h2>
+                <p class="text-gray-500">Happy Patient</p>
+              </div>
+            </div>
+            <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+              <div class="h-full bg-white p-8 rounded-lg  md:block flex  flex-col justify-center items-center">
+                <img alt="Michael R." class="w-20 h-20 mb-4 object-cover object-center rounded-full inline-block"
+                  src="https://randomuser.me/api/portraits/men/43.jpg">
+                <p class="leading-relaxed">I came in with a terrible toothache, and your team took care of me with such
+                  kindness and expertise. Thank you for making the experience so much better!</p>
+                <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+                <h2 class="text-gray-900 font-medium title-font tracking-wider text-lg">Michael R.</h2>
+                <p class="text-gray-500">Relieved Patient</p>
+              </div>
+            </div>
+            <div class="lg:w-1/3 lg:mb-0 p-4">
+              <div class="h-full bg-white p-8 rounded-lg  md:block flex  flex-col justify-center items-center">
+                <img alt="Sarah L." class="w-20 h-20 mb-4 object-cover object-center rounded-full inline-block"
+                  src="https://randomuser.me/api/portraits/women/68.jpg">
+                <p class="leading-relaxed">I've always been nervous about dental visits, but your team made me feel so
+                  comfortable. Thank you for taking such good care of my teeth!</p>
+                <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+                <h2 class="text-gray-900 font-medium title-font tracking-wider text-lg">Sarah L.</h2>
+                <p class="text-gray-500">Grateful Patient</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <div class="difference md:h-[80vh] w-screen flex flex-col items-center pt-20 pb-10 px-10"
+    style="background: linear-gradient(to bottom, #fdf6e6, #f6f9ff);">
+    <h2 class="font-bold text-5xl text-center">There is a Story Behind Every Smile</h2>
+    <p class="mt-4 text-lg text-center max-w-xl">We want to be part of your journey to renewed health and enhanced
+      confidence.</p>
+    <div class="cards flex flex-col md:flex-row md:gap-20 mt-10">
+      <div class="w-full md:w-[450px] h-[400px] rounded-xl overflow-hidden shadow-lg mb-10 md:mb-0">
+        <img class="w-full h-[320px]"
+          src="https://media.oralhealthgroup.com/uploads/2024/01/iStock-1483421796-e1704734276143.jpg" alt="Image">
+        <div class="px-6 py-4 bg-white">
+          <div class="font-bold text-3xl mb-2 text-blue-600 flex justify-between items-center">Feel Like Family <i
+              class="ml-4 fa-solid fa-right-from-bracket text-blue-600 text-2xl"></i></div>
+        </div>
+      </div>
+      <div class="w-full md:w-[450px] h-[400px] rounded-xl overflow-hidden shadow-lg mb-10 md:mb-0">
+        <img class="w-full h-[320px]"
+          src="https://www.shutterstock.com/image-photo/dentist-mirror-woman-check-smile-600nw-2308801975.jpg"
+          alt="Image">
+        <div class="px-6 py-4 bg-white">
+          <div class="font-bold text-3xl mb-2 text-blue-600 flex justify-between items-center">Lifetime of Smile <i
+              class="ml-4 fa-solid fa-right-from-bracket text-blue-600 text-2xl"></i></div>
+        </div>
+      </div>
+      <div class="w-full md:w-[450px] h-[400px] rounded-xl overflow-hidden shadow-lg">
+        <img class="w-full h-[320px]" src="https://sa1s3optim.patientpop.com/assets/images/provider/photos/2711098.jpg"
+          alt="Image">
+        <div class="px-6 py-4 bg-white">
+          <div class="font-bold text-3xl mb-2 text-blue-600 flex justify-between items-center">Modern Comfort <i
+              class="ml-4 fa-solid fa-right-from-bracket text-blue-600 text-2xl"></i></div>
+        </div>
+      </div>
+    </div>
+    <button class="btn bg-blue-600 p-3 rounded-2xl text-white mt-16 text-3xl shadow-lg cursor-pointer">Explore Our
+      Difference</button>
+  </div>
+
+
+  <div class="container mx-auto p-6 bg-white shadow-md rounded-md flex flex-wrap justify-between">
+    <div class="w-full sm:w-1/2 md:w-1/4 mb-6 sm:mb-0">
+      <h2 class="text-yellow-500 font-bold text-lg mb-4">Office Hours</h2>
+      <p>Mon 9:00 am - 5:00 pm</p>
+      <p>Tue 9:00 am - 5:00 pm</p>
+      <p>Wed 9:00 am - 5:00 pm</p>
+      <p>Thu 9:00 am - 5:00 pm</p>
+      <p>Fri 9:00 am - 5:00 pm</p>
+    </div>
+    <div class="w-full sm:w-1/2 md:w-1/4 mb-6 sm:mb-0">
+      <h2 class="text-yellow-500 font-bold text-lg mb-4">Contact Us</h2>
+      <ul class="list-none">
+        <li>(718) 942 9942</li>
+        <li>abuhasanmt@gmail.com</li>
+        <li>57 Grand Street, Brooklyn, NY 11249</li>
+      </ul>
+    </div>
+    <div class="w-full sm:w-1/2 md:w-1/4 mb-6 sm:mb-0">
+      <h2 class="text-yellow-500 font-bold text-lg mb-4">Links</h2>
+      <ul class="list-none mb-4">
+        <li><a href="#" class="text-gray-600 hover:text-gray-800">Home</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-gray-800">About Us</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-gray-800">Our Services</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-gray-800">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="w-full sm:w-1/2 md:w-1/4">
+      <h2 class="text-blue-500 font-bold text-lg mb-2">Dentist</h2>
+      <p class="mb-4">We will always give our customers the best in order to provide the best experience every time they
+        visit.</p>
+      <div class="flex space-x-4">
+        <a href="#" class="text-yellow-500 text-2xl"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-yellow-500 text-2xl"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-yellow-500 text-2xl"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="text-yellow-500 text-2xl"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    const menu = document.getElementById('menu')
+    const box = document.getElementById('box')
+
+    menu.addEventListener('click', () => {
+      box.classList.toggle('hidden')
+    })
+  </script>
+
+</body>
+
+</html>
