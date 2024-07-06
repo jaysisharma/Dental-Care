@@ -2,8 +2,7 @@ FROM nginx:alpine-perl
 
 WORKDIR /usr/share/nginx/html
 
-COPY index.html script.js ./
-COPY assets images assets/
+COPY . /usr/share/nginx/html
 
 EXPOSE 80
 
